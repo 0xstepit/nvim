@@ -1,5 +1,8 @@
 {
+  "Lualine": { "branch": "master", "commit": "2248ef254d0a1488a72041cfb45ca9caada6d994" },
   "Telescope": { "branch": "master", "commit": "7011eaae0ac1afe036e30c95cf80200b8dc3f21a" },
+  "bluewery.vim": { "branch": "master", "commit": "fb1fac7f7ed1cd4bd88358bb4af438562a963a42" },
   "lazy.nvim": { "branch": "main", "commit": "9788a19ec0b4036028e78aec702634b4b89d3470" },
+  "nvim-treesitter": { "branch": "master", "commit": "6e4a7707995f80d4e24641a081e90fe61cd38060" },
   "plenary.nvim": { "branch": "master", "commit": "50012918b2fc8357b87cff2a7f7f0446e47da174" }
 }
