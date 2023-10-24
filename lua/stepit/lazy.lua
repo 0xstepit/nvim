@@ -16,6 +16,9 @@ require("lazy").setup({
     { 'APZelos/blamer.nvim' },
     { 'ThePrimeagen/vim-be-good' },
     {
+        "lewis6991/gitsigns.nvim",
+    },
+    {
         'numToStr/Comment.nvim',
         opts = {
             -- add any options here
