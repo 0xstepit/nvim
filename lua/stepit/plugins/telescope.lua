@@ -20,8 +20,9 @@ return {
                 mappings = {
                     i = {
                         ["<C-k>"] = actions.move_selection_previous, -- move up in Results
-                        ["<C-j>"] = actions.move_selection_next, -- move down in Results
-                        ["<esc>"] = actions.close,
+                        ["<C-j>"] = actions.move_selection_next,     -- move down in Results
+                        ["<C-y>"] = actions.select_default,          -- move up in Results
+                        ["<C-c>"] = actions.close,
                     },
                 },
             },

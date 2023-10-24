@@ -17,6 +17,10 @@ require("lazy").setup({
     { 'ThePrimeagen/vim-be-good' },
     {
         "lewis6991/gitsigns.nvim",
+        opts = {
+
+        },
+        lazy = false,
     },
     {
         'numToStr/Comment.nvim',
