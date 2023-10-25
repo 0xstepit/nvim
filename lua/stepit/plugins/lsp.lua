@@ -79,11 +79,12 @@ return {
                         settings = {
                             gopls = {
                                 completeUnimported = true,
-                                usePlaceholders = true,
+                                usePlaceholders = true, --  enables placeholders for function parameters or struct fields in completion responses.
                                 analyses = {
                                     unusedparams = true,
                                 },
-                                staticcheck = true,
+                                staticcheck = true, -- staticcheck enables additional analyses from staticcheck.io
+                                gofump = true,
                             },
                         },
                     })
