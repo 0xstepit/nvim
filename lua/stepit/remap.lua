@@ -2,7 +2,7 @@ vim.g.mapleader = ' '
 
 -- Netrw
 -- toggle netrw on the left
-vim.keymap.set("n", '<leader>ee', ":Lexplore<CR>")
+vim.keymap.set("n", '<leader>ee', ":Ex<CR>")
 vim.api.nvim_create_autocmd('filetype', {
     pattern = 'netrw',
     desc = 'Better mappings for netrw',
@@ -52,3 +52,9 @@ vim.keymap.set("n", "<leader>h", ":wincmd h<CR>") -- jump pane on left
 vim.keymap.set("n", "<leader>j", ":wincmd j<CR>") -- jump pane on bottom
 vim.keymap.set("n", "<leader>k", ":wincmd k<CR>") -- jump pane on top
 vim.keymap.set("n", "<leader>l", ":wincmd l<CR>") -- jump pane on right
+
+vim.keymap.set("n", "<C-k>", "10k")
+vim.keymap.set("n", "<C-j>", "10j")
+
+-- Change current directory for Telescope to work properly
+vim.keymap.set("n", "<leader>cd", ":cd %:p:h<CR>:pwd<CR>")

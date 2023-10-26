@@ -46,3 +46,7 @@ opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 
 vim.g.blamer_enabled = true
 vim.g.blamer_show_in_visual_modes = false
+
+-- spelling check
+vim.opt.spelllang = 'en_us'
+vim.opt.spell = true

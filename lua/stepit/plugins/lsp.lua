@@ -84,7 +84,7 @@ return {
                                     unusedparams = true,
                                 },
                                 staticcheck = true, -- staticcheck enables additional analyses from staticcheck.io
-                                gofump = true,
+                                -- gofump = true,
                             },
                         },
                     })
