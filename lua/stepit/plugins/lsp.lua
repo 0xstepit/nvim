@@ -89,6 +89,18 @@ return {
                         },
                     })
                 end,
+                -- Go configuration
+                tsserver = function()
+                    require('lspconfig').tsserver.setup({
+                        settings = {
+                            settings = {
+                                completions = {
+                                    completeFunctionCalls = true
+                                }
+                            }
+                        },
+                    })
+                end,
             }
         })
 
