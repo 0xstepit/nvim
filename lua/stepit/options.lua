@@ -48,5 +48,8 @@ vim.g.blamer_enabled = true
 vim.g.blamer_show_in_visual_modes = false
 
 -- spelling check
-vim.opt.spelllang = 'en_us'
-vim.opt.spell = true
+opt.spelllang = 'en_us'
+opt.spell = true
+
+vim.cmd([[set list]])
+vim.cmd([[set lcs+=space:·]])
