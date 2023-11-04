@@ -1,4 +1,7 @@
 vim.g.netrw_banner = 0
+vim.g.netrw_liststyle = 3
+vim.g.netrw_browse_split = 0
+vim.g.netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
 
 local opt = vim.opt                           -- Set options
 
@@ -32,7 +35,8 @@ opt.incsearch = true -- highligh while writing in search
 
 opt.updatetime = 50
 
--- opt.scrolloff = 10 -- never less than 10 lines at bottom and top
+opt.scrolloff = 10 -- never less than 10 lines at bottom and top
+opt.sidescrolloff = 5
 opt.signcolumn = "yes"
 opt.isfname:append("@-@")
 
@@ -51,5 +55,5 @@ vim.g.blamer_show_in_visual_modes = false
 opt.spelllang = 'en_us'
 opt.spell = true
 
-vim.cmd([[set list]])
-vim.cmd([[set lcs+=space:·]])
+opt.list = true
+opt.listchars = { space = "·", trail = "·", tab = "> " }

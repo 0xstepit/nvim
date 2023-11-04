@@ -12,7 +12,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     { import = "stepit.plugins" },
-    { 'tpope/vim-fugitive' },
     { 'APZelos/blamer.nvim' },
     { 'ThePrimeagen/vim-be-good' },
     {

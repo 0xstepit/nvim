@@ -16,7 +16,7 @@ return {
 
         telescope.setup({
             defaults = {
-                path_display = { "shorten" },
+                path_display = { "truncate" },
                 mappings = {
                     i = {
                         ["<C-k>"] = actions.move_selection_previous, -- move up in Results

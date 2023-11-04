@@ -16,10 +16,6 @@ vim.api.nvim_create_autocmd('filetype', {
     end
 })
 
--- netw size
-vim.g.netrw_winsize = "17"
-vim.g.netrw_keepdir = 0
-
 -- open split vertical
 vim.keymap.set("n", "<leader><c-v>", ":vs<cr>")
 
