@@ -40,7 +40,7 @@ opt.sidescrolloff = 5
 opt.signcolumn = "yes"
 opt.isfname:append("@-@")
 
-opt.colorcolumn = "80"
+opt.colorcolumn = "100"
 
 -- move up and down remaining in the same column
 -- opt.virtualedit = "all"
