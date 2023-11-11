@@ -1,3 +1,6 @@
+-- space as leader
+vim.g.mapleader = ' '
+
 -- GENERAL
 -- exit from insert mode
 vim.keymap.set("i", 'jj', "<Esc>")
@@ -49,15 +52,15 @@ vim.keymap.set("n", "<leader><c-v>", ":vs<cr>")
 -- toggle netrw
 vim.keymap.set("n", '<leader>ee', ":Ex<CR>")
 vim.api.nvim_create_autocmd('filetype', {
-    pattern = 'netrw',
-    desc = 'Better mappings for netrw',
-    callback = function()
-        local bind = function(lhs, rhs)
-            vim.keymap.set('n', lhs, rhs, { remap = true, buffer = true })
-        end
-        -- new file
-        bind('e', '%')
-        -- open file
-        bind('L', '<CR>')
-    end
+	pattern = 'netrw',
+	desc = 'Better mappings for netrw',
+	callback = function()
+		local bind = function(lhs, rhs)
+			vim.keymap.set('n', lhs, rhs, { remap = true, buffer = true })
+		end
+		-- new file
+		bind('e', '%')
+		-- open file
+		bind('L', '<CR>')
+	end
 })

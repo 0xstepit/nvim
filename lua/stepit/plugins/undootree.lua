@@ -1,8 +1,11 @@
+-- Description: allows to have multiple history dimensions
+-- for the file we are working on.
 return {
-    'mbbill/undotree',
+	"mbbill/undotree",
+	name = "Undotree",
 
-    config = function()
-        vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
-    end
+	config = function()
+		-- open undotree
+		vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
+	end
 }
-
