@@ -1,8 +1,11 @@
 return {
-    'tpope/vim-fugitive',
+	"tpope/vim-fugitive",
+	name = "Fugitive",
 
-    config = function()
-        vim.keymap.set("n", "<leader>gs", ":Git<CR>")
-        vim.keymap.set("n", "<leader>gp", ":Git push<CR>")
-    end
+	config = function()
+		-- git status
+		vim.keymap.set("n", "<leader>gs", ":Git<CR>")
+		-- git push
+		vim.keymap.set("n", "<leader>gp", ":Git push<CR>")
+	end
 }

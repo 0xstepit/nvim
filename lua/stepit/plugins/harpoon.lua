@@ -7,16 +7,23 @@ return {
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 	},
-	config = true,
-	keys = {
-		{ "<leader>aa", "<cmd>lua require('harpoon.mark').add_file()<cr>",        desc = "Mark file with harpoon" },
-		{ "<leader>an", "<cmd>lua require('harpoon.ui').nav_next()<cr>",          desc = "Go to next harpoon mark" },
-		{ "<leader>ap", "<cmd>lua require('harpoon.ui').nav_prev()<cr>",          desc = "Go to previous harpoon mark" },
-		{ "<leader>am", "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>", desc = "Show harpoon marks" },
-		{ "<leader>a1", "<cmd>lua require('harpoon.ui').nav_file(1)<cr>",         desc = "Go to Mark number 1" },
-		{ "<leader>a2", "<cmd>lua require('harpoon.ui').nav_file(2)<cr>",         desc = "Go to Mark number 2" },
-		{ "<leader>a3", "<cmd>lua require('harpoon.ui').nav_file(3)<cr>",         desc = "Go to Mark number 3" },
-		{ "<leader>a4", "<cmd>lua require('harpoon.ui').nav_file(4)<cr>",         desc = "Go to Mark number 4" },
-		{ "<leader>a5", "<cmd>lua require('harpoon.ui').nav_file(5)<cr>",         desc = "Go to Mark number 5" },
-	},
+	config = function()
+		local mark = require("harpoon.mark")
+		local ui = require("harpoon.ui")
+
+		-- mark file with harpoon
+		vim.keymap.set("n", "<leader>aa", mark.add_file)
+		-- show harpoon marks
+		vim.keymap.set("n", "<leader>am", ui.toggle_quick_menu)
+		-- go to next harpoon mark
+		vim.keymap.set("n", "<leader>an", ui.nav_next)
+		-- go to previous harpoon mark
+		vim.keymap.set("n", "<leader>ap", ui.nav_prev)
+		-- go to specific mark number
+		vim.keymap.set("n", "<leader>a1", function() ui.nav_file(1) end)
+		vim.keymap.set("n", "<leader>a2", function() ui.nav_file(2) end)
+		vim.keymap.set("n", "<leader>a3", function() ui.nav_file(3) end)
+		vim.keymap.set("n", "<leader>a4", function() ui.nav_file(4) end)
+		vim.keymap.set("n", "<leader>a5", function() ui.nav_file(5) end)
+	end,
 }
