@@ -16,6 +16,7 @@ return {
 		telescope.setup({
 			defaults = {
 				path_display = { "truncate" },
+				fuzzy = true,
 				mappings = {
 					i = {
 						-- move up in Results
