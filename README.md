@@ -26,10 +26,6 @@ follow the instructions provided on the [official Neovim website](https://neovim
     nvim .
     ```
 
-3. Install plugins: TODO
-
-4. Restart Neovim.
-
 ## Plugins Included
 
 This configuration includes several plugins to enhance Neovim's capabilities. Plugins are contained
