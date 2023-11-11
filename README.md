@@ -29,7 +29,26 @@ follow the instructions provided on the [official Neovim website](https://neovim
 ## Plugins Included
 
 This configuration includes several plugins to enhance Neovim's capabilities. Plugins are contained
-in the folder `lua/stepit/plugins`. 
+in the folder `lua/stepit/plugins`. The current configuration includes:
+
+- LSP
+
+- Support for working with Git
+
+- Multidimensional history.
+
+- Fuzzy finding.
+
+- Formatting.
+
+- An amazing colorscheme.
+
+- Autocompletion.
+
+- Harpoon to mark and navigate only principal files.
+
+No useless tabs or overwhelming information, just a minimal configuration to allows you to focus
+on coding.
 
 ## Key Mappings
 
