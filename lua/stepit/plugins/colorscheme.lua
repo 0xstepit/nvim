@@ -18,6 +18,7 @@ return {
 		C.darkModerateCyan = "#296873"
 		C.amber = "#FFBF00"
 		C.steelBlue = "#4682B4"
+		C.limeGreen = "#65cdb3"
 
 		vim.opt.background = 'dark'
 		vim.cmd.colorscheme('bluewery')
@@ -26,7 +27,7 @@ return {
 		vim.api.nvim_set_hl(0, "Normal", { bg = C.black })
 		vim.api.nvim_set_hl(0, "NonText", { bg = C.black, fg = C.lightblue })
 		vim.api.nvim_set_hl(0, "Function", { fg = C.purple })
-		vim.api.nvim_set_hl(0, "String", { fg = C.turquoise })
+		vim.api.nvim_set_hl(0, "String", { fg = C.limeGreen })
 		vim.api.nvim_set_hl(0, "Identifier", { fg = C.white })
 		vim.api.nvim_set_hl(0, "Statement", { fg = C.red })
 		vim.api.nvim_set_hl(0, "Operator", { fg = C.red })
