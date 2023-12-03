@@ -84,6 +84,7 @@ return {
 				end,
 
 				-- Go configuration
+				-- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#gopls
 				gopls = function()
 					require("lspconfig").gopls.setup({
 						cmd = { "gopls", "serve" },
@@ -98,7 +99,7 @@ return {
 								},
 								-- staticcheck enables additional analyses from staticcheck.io
 								staticcheck = true,
-								gofump = true,
+								gofumpt = true,
 							},
 						},
 					})

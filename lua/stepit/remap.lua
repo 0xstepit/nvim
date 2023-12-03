@@ -58,8 +58,6 @@ vim.api.nvim_create_autocmd('filetype', {
 		local bind = function(lhs, rhs)
 			vim.keymap.set('n', lhs, rhs, { remap = true, buffer = true })
 		end
-		-- new file
-		bind('e', '%')
 		-- open file
 		bind('L', '<CR>')
 	end

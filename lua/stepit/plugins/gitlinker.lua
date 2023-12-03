@@ -6,5 +6,7 @@ return {
 	config = function()
 		local gitlinker = require("gitlinker")
 		gitlinker.setup({})
+		-- Copy repo url
+		vim.keymap.set("n", "<leader>gb", function() gitlinker.get_buf_range_url() end)
 	end
 }
