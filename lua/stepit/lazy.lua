@@ -12,7 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	{ import = "stepit.plugins" },
-	{ 'APZelos/blamer.nvim' },
+	-- { 'APZelos/blamer.nvim' },
 	{ "tpope/vim-surround" },
 	{
 		'numToStr/Comment.nvim',
