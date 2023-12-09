@@ -14,7 +14,7 @@ return {
 			changedelete = { text = "x" },
 		},
 		-- commit info on the right of a line
-		current_line_blame = false,
+		current_line_blame = true,
 		current_line_blame_formatter = '<author>, <author_time:%d-%m-%Y> - <summary>',
 	},
 }

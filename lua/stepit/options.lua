@@ -31,7 +31,7 @@ opt.wrap = false
 
 opt.swapfile = false
 
-opt.incsearch = true -- highligh while writing in search
+opt.incsearch = true -- highlight while writing in search
 
 opt.updatetime = 50
 
