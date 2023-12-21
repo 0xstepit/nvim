@@ -6,32 +6,43 @@ vim.g.netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
 local opt = vim.opt                           -- Set options
 
 opt.mouse = 'a'                               -- Enable mouse support
-opt.clipboard = 'unnamedplus'                 -- Copy/paste to system clipboard
+opt.clipboard = 'unnamedplus'                 -- Copy/paste to/from system clipboard
 opt.completeopt = 'menuone,noinsert,noselect' -- Autocomplete options
+
+-- Enables 24-bit RGB color
 opt.termguicolors = true
 
 opt.number = true -- Show line number
 opt.relativenumber = true
 
-opt.showmatch = true   -- Highlight matching parenthesis
+opt.showmatch = true  -- Highlight matching parenthesis
 
-opt.splitright = true  -- Vertical split to the right
-opt.splitbelow = true  -- Horizontal split to the bottom
+opt.splitright = true -- Vertical split to the right
+opt.splitbelow = true -- Horizontal split to the bottom
 
-opt.ignorecase = true  -- Ignore case letters when search
-opt.smartcase = true   -- Ignore ignorecase when search has uppercase characters
+-- Ignore case letters when search
+opt.ignorecase = true
+-- Ignore ignorecase when search has uppercase characters
+opt.smartcase = true
 
-opt.tabstop = 4        -- Width of a tab character
+opt.expandtab = true -- Use spaces instead of tabs
+opt.tabstop = 4      -- Width of a tab character when saving
 opt.softtabstop = 4
+-- (:h shiftwidth)
 opt.shiftwidth = 4     -- Blanks inserted in automatic indentation. 0 fall back to tabstop
-opt.expandtab = true   -- Use spaces instead of tabs
 opt.smartindent = true -- Autoindent new lines
 
+-- Avoid wrapping words in new line
 opt.wrap = false
 
+-- Stop creating swap files
 opt.swapfile = false
 
-opt.incsearch = true -- highlight while writing in search
+-- Highlight while writing in search
+opt.incsearch = true
+
+-- Create a split below with affected text during change
+opt.inccommand = "split"
 
 opt.updatetime = 50
 
@@ -57,3 +68,7 @@ opt.spell = true
 
 opt.list = true
 opt.listchars = { space = "·", trail = "·", tab = "> " }
+
+
+-- Allow the cursor to move where no character is present.
+opt.virtualedit = "block"

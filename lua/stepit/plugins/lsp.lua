@@ -72,6 +72,7 @@ return {
 				"pyright",
 				"gopls",
 				"rust_analyzer",
+				"solidity",
 			},
 			handlers = {
 				-- This allows us to have default settings for all language server

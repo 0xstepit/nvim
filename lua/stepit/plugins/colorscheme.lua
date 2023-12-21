@@ -1,6 +1,7 @@
 return {
 	"relastle/bluewery.vim",
 	lazy = false,
+	-- Config is run just after installing the plugin.
 	config = function()
 		-- Colors table
 		local C = {}
